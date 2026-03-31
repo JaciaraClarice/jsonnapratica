@@ -1,7 +1,7 @@
 const url = 'https://randomuser.me/api/?results=10';
 
 async function getUsers(lista) {
-    const rep = await fetch (url);
+    const resp = await fetch (url);
     const objeto = await resp.json();
     let itens = "";
     for (let pessoa of objeto.results) {
